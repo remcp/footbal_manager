@@ -59,6 +59,8 @@
             this.button9 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.empty = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // listBox1
@@ -358,6 +360,16 @@
             this.empty.TabIndex = 31;
             this.empty.Text = "label3";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::soccer_manager.Properties.Resources.footbal_field2;
+            this.pictureBox1.Location = new System.Drawing.Point(1045, 171);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(427, 378);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -394,9 +406,11 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,5 +449,6 @@
         private Button button9;
         private ComboBox comboBox1;
         private Label empty;
+        private PictureBox pictureBox1;
     }
 }
